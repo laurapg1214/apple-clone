@@ -1,0 +1,353 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
+
+/* setup */
+/* borderbox */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/* end of setup */
+
+/* font */
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+body {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+/* container */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* nav bar */
+nav {
+  background-color: rgba(0,0,0,0.8);
+  height: 44px;
+}
+nav ul {
+  height: 44px;
+}
+nav li {
+  display: inline-block;
+  width: 10%;
+  height: 44px;
+  vertical-align: top;
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+}
+.nav-link {
+  opacity: 1;
+  height: 44px;
+}
+.nav-link:hover {
+  opacity: .65;
+}
+#nav-apple-icon {
+  width: 20px;
+  background: url(images/navbar/apple-icon.png) 50% 50% no-repeat;
+}
+#nav-mac {
+  width: 31px;
+  background: url(images/navbar/mac.png) 50% 50% no-repeat;
+}
+#nav-ipad {
+  width: 30px;
+  background: url(images/navbar/ipad.png) 50% 50% no-repeat;
+}
+#nav-iphone {
+  width: 48px;
+  background: url(images/navbar/iphone.png) 50% 50% no-repeat;
+}
+#nav-watch {
+  width: 44px;
+  background: url(images/navbar/watch.png) 50% 50% no-repeat;
+}
+#nav-tv {
+  width: 20px;
+  background: url(images/navbar/tv.png) 50% 50% no-repeat;
+}
+#nav-music {
+  width: 40px;
+  background: url(images/navbar/music.png) 50% 50% no-repeat;
+}
+#nav-support {
+  width: 57px;
+  background: url(images/navbar/support.png) 50% 50% no-repeat;
+}
+#nav-search {
+  width: 20px;
+  background: url(images/navbar/search.png) 50% 50% no-repeat;
+}
+#nav-shop {
+  width: 18px;
+  background: url(images/navbar/shop.png) 50% 50% no-repeat;
+}
+
+/* hero section */
+.hero {
+  margin-top: 10px;
+}
+#hero-product-image {
+  height: 600px;
+  background: url(images/hero_iphone_13pro_alternative.jpg) center no-repeat;
+  margin-top: -200px;
+}
+.hero h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3.4em;
+  font-weight: 600;
+  letter-spacing: -1;
+}
+.hero h2 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.6em;
+  font-weight: 500;
+  letter-spacing: -1;
+}
+.hero li {
+  display: inline-block;
+}
+#product-links {
+  text-align: center;
+  padding-top: 30px;
+}
+#product-links > li > a {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: rgb(33, 130, 16);
+  text-decoration: none;
+  padding-right: 10px;
+}
+#product-links > li > a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* sub hero section */
+.sub-hero-section {
+
+}
+.col-3 {
+  display: inline-block;
+  width: 25%;
+  height: 200px;
+  vertical-align: top;
+  background-size: cover;
+  background-position: center;
+}
+.sub-hero-images {
+  border-right: 2px solid #fff;
+  margin-top: 10px;
+}
+#sub-hero-watch {
+  background: url(images/watch_large.jpg) 50% 50% no-repeat;
+}
+#sub-hero-ipad {
+  background: url(images/ipad_pro_large.jpg) 50% 50% no-repeat;
+}
+#sub-hero-accessories {
+  background: url(images/accessories_large.jpg) 50% 50% no-repeat;
+}
+#sub-hero-macbook {
+  background: url(images/macbook_large.jpg) 50% 50% no-repeat;
+}
+#recall {
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: -1;
+  margin: 20px 0;
+}
+#recall a {
+  color: rgb(33, 130, 16);
+  text-decoration: none;
+}
+#recall a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+/* footer section */
+footer {
+  background-color: #f2f2f2;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 400;
+  letter-spacing: -0.01px;
+  color: #666;
+}
+footer > container {
+  padding: 0 22px;
+}
+.footer-nav {
+  padding-top: 20px;
+}
+.col {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+.footer-nav ul > li:first-child {
+  font-weight: 600;
+  color: #333;
+}
+.footer-nav ul > li:not(:first-child) > a {
+  text-decoration: none;
+  color: rgb(33, 130, 16);
+}
+.footer-nav ul > li:not(:first-child) > a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+.footer-help {
+  color: #999;
+}
+.footer-help > p {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.footer-help > p > a {
+  color: rgb(33, 130, 16);
+  text-decoration: none;
+}
+.footer-help > p > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.footer-help > div {
+  display: inline-block;
+  vertical-align: top;
+}
+#legal {
+  margin-right: 22px;
+}
+#legal-links > a {
+  color: #666;
+  text-decoration: none;
+}
+#legal-links > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#legal-links > a:not(:last-child) {
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+#locale {
+  float: right;
+}
+#locale > a {
+  display: inline-block;
+  vertical-align: top;
+  color: #666;
+  text-decoration: none;
+}
+#locale > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#locale-flag {
+  display: inline-block;
+  height: 16px;
+  width: 21px;
+  background: url(images/usa.png) 50% 50% no-repeat;
+}
